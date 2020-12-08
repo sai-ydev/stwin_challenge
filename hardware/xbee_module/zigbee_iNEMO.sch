@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="9.6.2">
+<eagle version="9.6.0">
 <drawing>
 <settings>
 <setting alwaysvectorfont="no"/>
@@ -948,13 +948,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pin name="V_BATT" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
 <text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
 </symbol>
-<symbol name="3.3V" urn="urn:adsk.eagle:symbol:39411/1" library_version="1">
-<description>&lt;h3&gt;3.3V Voltage Supply&lt;/h3&gt;</description>
-<wire x1="0.762" y1="1.27" x2="0" y2="2.54" width="0.254" layer="94"/>
-<wire x1="0" y1="2.54" x2="-0.762" y2="1.27" width="0.254" layer="94"/>
-<pin name="3.3V" x="0" y="0" visible="off" length="short" direction="sup" rot="R90"/>
-<text x="0" y="2.794" size="1.778" layer="96" align="bottom-center">&gt;VALUE</text>
-</symbol>
 </symbols>
 <devicesets>
 <deviceset name="VDD" urn="urn:adsk.eagle:component:39445/1" prefix="SUPPLY" library_version="1">
@@ -976,20 +969,6 @@ You are welcome to use this library for commercial purposes. For attribution, we
 &lt;p&gt;Generic symbol for the battery input to a system.&lt;/p&gt;</description>
 <gates>
 <gate name="G$1" symbol="V_BATT" x="0" y="0"/>
-</gates>
-<devices>
-<device name="">
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-<deviceset name="3.3V" urn="urn:adsk.eagle:component:39435/1" prefix="SUPPLY" library_version="1">
-<description>&lt;h3&gt;3.3V Supply Symbol&lt;/h3&gt;
-&lt;p&gt;Power supply symbol for a specifically-stated 3.3V source.&lt;/p&gt;</description>
-<gates>
-<gate name="G$1" symbol="3.3V" x="0" y="0"/>
 </gates>
 <devices>
 <device name="">
@@ -4692,8 +4671,6 @@ by exp-lbrs.ulp</description>
 <part name="FRAME3" library="SparkFun-Aesthetics" library_urn="urn:adsk.eagle:library:507" deviceset="FRAME-A4L" device=""/>
 <part name="R8" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
 <part name="R9" library="SparkFun-Resistors" library_urn="urn:adsk.eagle:library:532" deviceset="4.7KOHM" device="-0603-1/10W-1%" package3d_urn="urn:adsk.eagle:package:39650/1" value="4.7k"/>
-<part name="SUPPLY6" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
-<part name="SUPPLY10" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="3.3V" device=""/>
 <part name="U3" library="starview_mini_v7" deviceset="XBEE3_THING_PLUS_SPARKFUN-RF_XBEE3" device="" value="XBEE3_Micro"/>
 <part name="GND23" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="SUPPLY28" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
@@ -4706,6 +4683,8 @@ by exp-lbrs.ulp</description>
 <part name="SUPPLY4" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 <part name="SUPPLY8" library="SparkFun-PowerSymbols" library_urn="urn:adsk.eagle:library:530" deviceset="VDD" device=""/>
 <part name="SUPPLY1" library="SparkFun-PowerSymbols" deviceset="VCC_1" device=""/>
+<part name="SUPPLY7" library="SparkFun-PowerSymbols" deviceset="VCC_1" device=""/>
+<part name="SUPPLY6" library="SparkFun-PowerSymbols" deviceset="VCC_1" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -5399,12 +5378,6 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="245.364" y="50.038" size="1.016" layer="95" font="vector" ratio="20" rot="MR180" align="bottom-center"/>
 <attribute name="VALUE" x="237.236" y="48.514" size="1.016" layer="96" font="vector" ratio="20" rot="MR180" align="top-center"/>
 </instance>
-<instance part="SUPPLY6" gate="G$1" x="251.206" y="59.944" smashed="yes">
-<attribute name="VALUE" x="251.206" y="62.738" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
-</instance>
-<instance part="SUPPLY10" gate="G$1" x="159.004" y="81.026" smashed="yes">
-<attribute name="VALUE" x="159.004" y="83.82" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
-</instance>
 <instance part="SUPPLY4" gate="VDD" x="17.78" y="86.36" smashed="yes">
 <attribute name="VALUE" x="17.78" y="89.154" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
 </instance>
@@ -5413,6 +5386,12 @@ by exp-lbrs.ulp</description>
 </instance>
 <instance part="SUPPLY1" gate="G$2" x="25.146" y="86.106" smashed="yes">
 <attribute name="VALUE" x="27.686" y="86.36" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY7" gate="G$2" x="158.75" y="75.692" smashed="yes">
+<attribute name="VALUE" x="161.29" y="75.946" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
+</instance>
+<instance part="SUPPLY6" gate="G$2" x="251.206" y="59.944" smashed="yes">
+<attribute name="VALUE" x="253.746" y="60.198" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
 </instance>
 </instances>
 <busses>
@@ -5544,6 +5523,28 @@ by exp-lbrs.ulp</description>
 <junction x="25.146" y="82.296"/>
 <pinref part="SUPPLY1" gate="G$2" pin="VCC_1"/>
 </segment>
+<segment>
+<pinref part="J1" gate="G$1" pin="2"/>
+<wire x1="137.16" y1="55.88" x2="149.352" y2="55.88" width="0.1524" layer="91"/>
+<wire x1="149.352" y1="55.88" x2="149.352" y2="65.786" width="0.1524" layer="91"/>
+<pinref part="C12" gate="G$1" pin="1"/>
+<wire x1="159.004" y1="61.468" x2="159.004" y2="65.786" width="0.1524" layer="91"/>
+<wire x1="159.004" y1="65.786" x2="158.75" y2="65.786" width="0.1524" layer="91"/>
+<pinref part="SUPPLY7" gate="G$2" pin="VCC_1"/>
+<wire x1="158.75" y1="65.786" x2="149.352" y2="65.786" width="0.1524" layer="91"/>
+<wire x1="158.75" y1="65.786" x2="158.75" y2="75.692" width="0.1524" layer="91"/>
+<junction x="158.75" y="65.786"/>
+</segment>
+<segment>
+<pinref part="R8" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="53.34" x2="251.206" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="251.206" y1="53.34" x2="251.206" y2="59.944" width="0.1524" layer="91"/>
+<pinref part="R9" gate="G$1" pin="2"/>
+<wire x1="246.38" y1="48.26" x2="251.206" y2="48.26" width="0.1524" layer="91"/>
+<wire x1="251.206" y1="48.26" x2="251.206" y2="53.34" width="0.1524" layer="91"/>
+<junction x="251.206" y="53.34"/>
+<pinref part="SUPPLY6" gate="G$2" pin="VCC_1"/>
+</segment>
 </net>
 <net name="SENSOR_EN1" class="0">
 <segment>
@@ -5607,16 +5608,9 @@ by exp-lbrs.ulp</description>
 <label x="208.28" y="127" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 <segment>
-<pinref part="U1" gate="G$1" pin="NO3"/>
-<wire x1="58.42" y1="53.34" x2="63.5" y2="53.34" width="0.1524" layer="91"/>
-<label x="63.5" y="53.34" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
-</segment>
-</net>
-<net name="SDA" class="0">
-<segment>
-<pinref part="U1" gate="G$1" pin="COM3"/>
-<wire x1="58.42" y1="55.88" x2="63.5" y2="55.88" width="0.1524" layer="91"/>
-<label x="63.5" y="55.88" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+<pinref part="U1" gate="G$1" pin="COM2"/>
+<wire x1="27.94" y1="60.96" x2="22.86" y2="60.96" width="0.1524" layer="91"/>
+<label x="22.86" y="60.96" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SCL" class="0">
@@ -5645,6 +5639,11 @@ by exp-lbrs.ulp</description>
 <wire x1="236.22" y1="48.26" x2="226.06" y2="48.26" width="0.1524" layer="91"/>
 <label x="226.06" y="48.26" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
+<segment>
+<pinref part="U9" gate="A" pin="SDX"/>
+<wire x1="160.02" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
+<label x="154.94" y="124.46" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+</segment>
 </net>
 <net name="SCL_AUX" class="0">
 <segment>
@@ -5657,38 +5656,6 @@ by exp-lbrs.ulp</description>
 <wire x1="236.22" y1="53.34" x2="226.06" y2="53.34" width="0.1524" layer="91"/>
 <label x="226.06" y="53.34" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
-</net>
-<net name="3.3V" class="0">
-<segment>
-<pinref part="R8" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="53.34" x2="251.206" y2="53.34" width="0.1524" layer="91"/>
-<wire x1="251.206" y1="53.34" x2="251.206" y2="59.944" width="0.1524" layer="91"/>
-<pinref part="R9" gate="G$1" pin="2"/>
-<wire x1="246.38" y1="48.26" x2="251.206" y2="48.26" width="0.1524" layer="91"/>
-<wire x1="251.206" y1="48.26" x2="251.206" y2="53.34" width="0.1524" layer="91"/>
-<junction x="251.206" y="53.34"/>
-<pinref part="SUPPLY6" gate="G$1" pin="3.3V"/>
-</segment>
-<segment>
-<pinref part="J1" gate="G$1" pin="2"/>
-<wire x1="137.16" y1="55.88" x2="149.352" y2="55.88" width="0.1524" layer="91"/>
-<wire x1="149.352" y1="55.88" x2="149.352" y2="65.786" width="0.1524" layer="91"/>
-<pinref part="C12" gate="G$1" pin="1"/>
-<wire x1="159.004" y1="61.468" x2="159.004" y2="65.786" width="0.1524" layer="91"/>
-<wire x1="159.004" y1="65.786" x2="149.352" y2="65.786" width="0.1524" layer="91"/>
-<wire x1="159.004" y1="81.026" x2="159.004" y2="65.786" width="0.1524" layer="91"/>
-<junction x="159.004" y="65.786"/>
-<pinref part="SUPPLY10" gate="G$1" pin="3.3V"/>
-</segment>
-</net>
-<net name="SDA_1.8V" class="0">
-<segment>
-<pinref part="U9" gate="A" pin="SDX"/>
-<wire x1="160.02" y1="124.46" x2="154.94" y2="124.46" width="0.1524" layer="91"/>
-<label x="154.94" y="124.46" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
-</segment>
-</net>
-<net name="SCL_1.8V" class="0">
 <segment>
 <pinref part="U9" gate="A" pin="SCX"/>
 <wire x1="160.02" y1="121.92" x2="154.94" y2="121.92" width="0.1524" layer="91"/>
@@ -5713,12 +5680,19 @@ by exp-lbrs.ulp</description>
 <pinref part="SUPPLY8" gate="VDD" pin="VDD"/>
 </segment>
 </net>
+<net name="SDA" class="0">
+<segment>
+<pinref part="U1" gate="G$1" pin="NO2"/>
+<wire x1="27.94" y1="63.5" x2="22.86" y2="63.5" width="0.1524" layer="91"/>
+<label x="22.86" y="63.5" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
 <approved hash="104,3,137.16,53.34,J1,1,GND,,,"/>
-<approved hash="104,3,137.16,55.88,J1,2,3.3V,,,"/>
+<approved hash="104,3,137.16,55.88,J1,2,VCC_1,,,"/>
 <approved hash="104,2,7.62,93.98,BATT1,-,GND,,,"/>
 <approved hash="104,2,7.62,104.14,BATT1,+,BATT_IN,,,"/>
 <approved hash="202,3,160.02,119.38,U9,INT1,,,,"/>
@@ -5726,12 +5700,12 @@ by exp-lbrs.ulp</description>
 <approved hash="104,3,205.74,111.76,U9,VDD,VCC_1,,,"/>
 <approved hash="202,3,205.74,114.3,U9,INT2,,,,"/>
 <approved hash="104,3,40.64,132.08,U10,VDD,VCC_1,,,"/>
-<approved hash="104,1,147.32,60.96,IC1,VCC,VDD,,,"/>
 <approved hash="208,1,7.62,172.72,VDD,sup,,,,"/>
-<approved hash="208,1,162.56,75.184,VDD,sup,,,,"/>
 <approved hash="208,1,147.32,171.704,VDD,sup,,,,"/>
 <approved hash="208,2,160.02,165.1,VDD,sup,,,,"/>
 <approved hash="208,2,116.84,119.38,VDD,out,,,,"/>
+<approved hash="208,3,17.78,86.36,VDD,sup,,,,"/>
+<approved hash="208,3,64.77,88.138,VDD,sup,,,,"/>
 <approved hash="113,3,132.715,57.912,J1,,,,,"/>
 <approved hash="113,1,65.024,142.316,RESET1,,,,,"/>
 </errors>
