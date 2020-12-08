@@ -5352,19 +5352,19 @@ by exp-lbrs.ulp</description>
 <attribute name="NAME" x="198.4756" y="132.3086" size="1.016" layer="95" font="vector" ratio="20" rot="SR0"/>
 <attribute name="VALUE" x="165.3286" y="132.3086" size="1.016" layer="96" font="vector" ratio="20" rot="SR0"/>
 </instance>
-<instance part="U10" gate="A" x="38.1" y="132.08" smashed="yes">
-<attribute name="NAME" x="46.0756" y="137.6426" size="1.016" layer="95" font="vector" ratio="20" rot="SR0"/>
-<attribute name="VALUE" x="68.5546" y="137.6426" size="1.016" layer="96" font="vector" ratio="20" rot="SR0"/>
+<instance part="U10" gate="A" x="33.02" y="134.62" smashed="yes">
+<attribute name="NAME" x="40.9956" y="140.1826" size="1.016" layer="95" font="vector" ratio="20" rot="SR0"/>
+<attribute name="VALUE" x="63.4746" y="140.1826" size="1.016" layer="96" font="vector" ratio="20" rot="SR0"/>
 </instance>
-<instance part="SUPPLY13" gate="G$2" x="30.226" y="147.066" smashed="yes">
-<attribute name="VALUE" x="32.766" y="147.32" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
+<instance part="SUPPLY13" gate="G$2" x="25.146" y="149.606" smashed="yes">
+<attribute name="VALUE" x="27.686" y="149.86" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
 </instance>
-<instance part="C1" gate="G$1" x="16.764" y="135.128" smashed="yes">
-<attribute name="NAME" x="16.129" y="137.922" size="1.016" layer="95" font="vector" ratio="20" rot="R90"/>
-<attribute name="VALUE" x="16.383" y="131.572" size="1.016" layer="96" font="vector" ratio="20" rot="R90"/>
+<instance part="C1" gate="G$1" x="11.684" y="137.668" smashed="yes">
+<attribute name="NAME" x="11.049" y="140.462" size="1.016" layer="95" font="vector" ratio="20" rot="R90"/>
+<attribute name="VALUE" x="11.303" y="134.112" size="1.016" layer="96" font="vector" ratio="20" rot="R90"/>
 </instance>
-<instance part="GND2" gate="1" x="16.764" y="103.378" smashed="yes">
-<attribute name="VALUE" x="15.748" y="101.854" size="1.016" layer="96" font="vector" ratio="20"/>
+<instance part="GND2" gate="1" x="11.684" y="105.918" smashed="yes">
+<attribute name="VALUE" x="10.668" y="104.394" size="1.016" layer="96" font="vector" ratio="20"/>
 </instance>
 <instance part="SUPPLY2" gate="G$2" x="228.346" y="152.146" smashed="yes">
 <attribute name="VALUE" x="230.886" y="152.4" size="1.016" layer="96" font="vector" ratio="20" align="bottom-center"/>
@@ -5456,13 +5456,13 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="GND2" gate="1" pin="GND"/>
 <pinref part="C1" gate="G$1" pin="2"/>
-<wire x1="16.764" y1="105.918" x2="16.764" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="11.684" y1="108.458" x2="11.684" y2="111.76" width="0.1524" layer="91"/>
 <pinref part="U10" gate="A" pin="GND"/>
-<wire x1="16.764" y1="109.22" x2="16.764" y2="132.588" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="129.54" x2="104.14" y2="129.54" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="129.54" x2="104.14" y2="109.22" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="109.22" x2="16.764" y2="109.22" width="0.1524" layer="91"/>
-<junction x="16.764" y="109.22"/>
+<wire x1="11.684" y1="111.76" x2="11.684" y2="135.128" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="132.08" x2="99.06" y2="132.08" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="132.08" x2="99.06" y2="111.76" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="111.76" x2="11.684" y2="111.76" width="0.1524" layer="91"/>
+<junction x="11.684" y="111.76"/>
 </segment>
 <segment>
 <pinref part="GND4" gate="1" pin="GND"/>
@@ -5494,17 +5494,17 @@ by exp-lbrs.ulp</description>
 <segment>
 <pinref part="U10" gate="A" pin="VDD"/>
 <pinref part="SUPPLY13" gate="G$2" pin="VCC_1"/>
-<wire x1="40.64" y1="132.08" x2="30.226" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="30.226" y1="132.08" x2="30.226" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="35.56" y1="134.62" x2="25.146" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="25.146" y1="134.62" x2="25.146" y2="147.32" width="0.1524" layer="91"/>
 <pinref part="U10" gate="A" pin="CS"/>
-<wire x1="30.226" y1="144.78" x2="30.226" y2="147.066" width="0.1524" layer="91"/>
-<wire x1="96.52" y1="132.08" x2="104.14" y2="132.08" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="132.08" x2="104.14" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="104.14" y1="144.78" x2="30.226" y2="144.78" width="0.1524" layer="91"/>
-<junction x="30.226" y="144.78"/>
+<wire x1="25.146" y1="147.32" x2="25.146" y2="149.606" width="0.1524" layer="91"/>
+<wire x1="91.44" y1="134.62" x2="99.06" y2="134.62" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="134.62" x2="99.06" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="99.06" y1="147.32" x2="25.146" y2="147.32" width="0.1524" layer="91"/>
+<junction x="25.146" y="147.32"/>
 <pinref part="C1" gate="G$1" pin="1"/>
-<wire x1="16.764" y1="140.208" x2="16.764" y2="144.78" width="0.1524" layer="91"/>
-<wire x1="16.764" y1="144.78" x2="30.226" y2="144.78" width="0.1524" layer="91"/>
+<wire x1="11.684" y1="142.748" x2="11.684" y2="147.32" width="0.1524" layer="91"/>
+<wire x1="11.684" y1="147.32" x2="25.146" y2="147.32" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U9" gate="A" pin="VDD"/>
@@ -5581,8 +5581,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="U10" gate="A" pin="SCL/SPC"/>
-<wire x1="40.64" y1="129.54" x2="30.48" y2="129.54" width="0.1524" layer="91"/>
-<label x="30.48" y="129.54" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
+<wire x1="35.56" y1="132.08" x2="25.4" y2="132.08" width="0.1524" layer="91"/>
+<label x="25.4" y="132.08" size="1.016" layer="95" font="vector" ratio="20" rot="R180" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U9" gate="A" pin="SCL"/>
@@ -5598,8 +5598,8 @@ by exp-lbrs.ulp</description>
 </segment>
 <segment>
 <pinref part="U10" gate="A" pin="SDA/SDI/SDO"/>
-<wire x1="96.52" y1="127" x2="106.68" y2="127" width="0.1524" layer="91"/>
-<label x="106.68" y="127" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
+<wire x1="91.44" y1="129.54" x2="101.6" y2="129.54" width="0.1524" layer="91"/>
+<label x="101.6" y="129.54" size="1.016" layer="95" font="vector" ratio="20" xref="yes"/>
 </segment>
 <segment>
 <pinref part="U9" gate="A" pin="SDA"/>
